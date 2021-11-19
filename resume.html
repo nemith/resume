@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Brandon Bennett</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Brandon Bennett</h1>
+        <h2>Network Automation Engineer</h2>
+    </header>
+
+    <div class="content">
+        <div class="side">
+            <section id="info">
+                <h1>Info</h1>
+                <dl>
+                    <dt>Location</dt>
+                    <dl>Evergreen, CO 80439</dl>
+                    <dt>Phone</dt>
+                    <dl>720.284.2903</dl>
+                    <dt>Email</dt>
+                    <dl>brandon@brbe.me</dl>
+                    <dt>Github</dt>
+                    <dl><a href="https://github.com/nemith">github.com/nemith</a></dl>
+                </dl>
+            </section>
+
+            <section id="skills">
+                <h1>Skills</h1>
+                <dl>
+                    <dt>Languages</dt>
+                    <dl>Go, Python, Rust, SLAX/Junos scripting, C/C++, Ruby</dl>
+                    <dt>Protocols</dt>
+                    <dl>BGP, OSPF, IS-IS, MPLS (LDP, RSVP, RSVP-TE), QoS, DNS, DHCP, ZTP, HSRP, NETCONF, SNMP,
+                        YANG/OpenConfig, TACACS</dl>
+                    <dt>Systems</dt>
+                    <dl>Linux, BSD, Junos, IOS-XR, NX-OS, Cumulus, FBOSS</dl>
+                    <dt>Frameworks/Technologies</dt>
+                    <dl>Django, Ansible, Chef, Netbox, MySQL/Postgres, Apache Zookeeper, git, mercurial (hg), svn</dl>
+                </dl>
+                </ul>
+            </section>
+            <section id="certifications">
+                <h1>Certifications</h1>
+                <ul>
+                    <li>CCIE R&S #19406 (Expired)</li>
+                    <li>JNCIE-ER #46 (Expired)</li>
+                    <li>JNCIE-M #658 (Expired)</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="main">
+            <section id="profile">
+                <h1>Profile</h1>
+                <p>Network engineer with a passion for automating the mundane to improve operation efficiency and cut
+                    down on user errors. 20 years of experience in networking, half of which has been focused on
+                    building tools and automation. Deep experience with multiple network operating systems, Linux, and
+                    large scale networks.</p>
+            </section>
+
+            <section id="experience">
+                <h1>Work History</h1>
+
+                <div class="job">
+                    <h1>Network Production Engineer, <span class="job-company">Meta</span></h1>
+                    <span class="job-date">Feb 2021 - Present</span>
+                    <ul>
+                        <li>Worked as a Production Engineer embedded inside the DC SDN Controller team to help optimize
+                            for reliability and fast/accurate deployments. Improved dashboard and alarms for easier
+                            on-call shifts.</li>
+                        <li>Implemented a plan to help harden critical automation tooling after a major Facebook outage.
+                            Organized work for 3 critical systems and help hand-off of the systems to engineers
+                            unfamiliar with them.
+                            Implemented critical bug and guardrails to help prevent similar issues going forward.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h1>Network Automation Manager, <span class="job-company">Subspace</span></h1>
+                    <span class="job-date">Sep 2020 - Feb 2021</span>
+                    <ul>
+                        <li>Started the foundation for a network automation team inside Subspace to solve
+                            deployments and config changes for devices located in pops around the globe.</li>
+                        <li>Worked closely with recruiting to define the network automation role and what engineers to
+                            target.</li>
+                        <li>Started work on a network modeling system so we could define out device and circuit modeling
+                            to eventually be used to generate configuration. Implemented a sync script to keep new/old
+                            systems in sync.</li>
+                        <li>Worked to help define a "bootstrap" console server that could be used to ZTP provision the
+                            rest of the network to cut down on a multiple days turn up into hours. Worked with external
+                            vendors and internal teams to select correct hardware.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h1>Network Production Engineering Manager, <span class="job-company">Facebook (now Meta)</span>
+                    </h1>
+                    <span class="job-date">Sep 2018 - Sep 2020</span>
+                    <ul>
+                        <li>Supported a team of six supporting various systems for device life-cycle, ZTP, network
+                            auditing, and
+                            controlled network drains.</li>
+                        <li>Worked to restructure the team to help aid the merging of overlapping tools and to work
+                            closer with Software Engineering counterparts in the organization.</li>
+                        <li>Created and ran the first network tooling meetup for all teams building or working with
+                            network tooling from across multiple offices across the globe to give updates/presentations
+                            and collaborate on different systems together.</li>
+                        <li>Help build a community team comprised of 5-7 engineers from multiple
+                            organizations to support the Go programming language.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h1>Network Production Engineering, <span class="job-company">Facebook (now Meta)</span></h1>
+                    <span class="job-date">Dec 2013 - Sep 2018</span>
+                    <ul>
+                        <li>Re-implemented a full BGP mesh script to intelligently create a full iBGP mesh config for
+                            all
+                            datacenter/edge routers and apply the correct policy to them.</li>
+                        <li>Re-implemented a MPLS mesh script to create RSVP tunnels between all remote sides based on
+                            traffic demand, capacity, site type, and static configuration. Increasing code
+                            extendability, and vastly sped up build times from tens of minutes down to seconds.</li>
+                        <li>Wrote a system to store vendor firmware/OS images an serve them over HTTP, TFTP, FTP, or
+                            SFTP from multiple datacenters utilizing internal blob storage</li>
+                        <li>Worked on a small team to design and implement a new device life-cycle system
+                            (provisioning/ztp, reconfiguring/rebuild, and decomissioning, etc) for multiple different
+                            device roles and network operating systems<ul>
+                                <li>
+                                    Fully distributed system with a Zookeeper based queue system and very resilient to
+                                    system outages. If workers died other workers would pick up the work</li>
+                                <li>Processes were spit up into small independent binaries that did the work and could
+                                    be reused across multiple life-cycle workflows</li>
+                                <li>Used to perform over 4 million jobs over the life of the system to date.</li>
+                            </ul>
+                        </li>
+                        <li>Worked with the initial turn up of Facebook's Express Backbone, a network with a custom MPLS
+                            SR stack running on commodity switches (Arista 7500/7800) series. Design the initial network
+                            configuration, addressing, and port policies. Created a program to automate generation of
+                            full configs for this new system.</li>
+                        <li>Helped supported Go for all of Facebook and integrating into build systems, test runners,
+                            internal library support, for over 300 developers. Helped build tools and provide support
+                            for integrating Oslo merger into Facebook's megarepo.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h1>Sr. Systems Engineer, <span class="job-company">Juniper Networks</span></h1>
+                    <span class="job-date">Jul 2011 - Dec 2013</span>
+                    <ul>
+                        <li>Presales engineer in the commercial space covering CO, NM, UT, and WY including the entire
+                            Juniper product lines with emphasis on advanced routing and switching on the EX-series and
+                            MX-series products.</li>
+                        <li>Assisted and led customer designs including large security, campus, and data center
+                            deployments utilizing Juniper equipment.</li>
+                        <li>Presented in front of Juniper customers and partners utilizing both self-generated and
+                            corporate created content on latest industry trends and various Juniper solutions.</li>
+                        <li>Wrote commit and event scripts in SLAX replicating Ciscos IOS RPM feature to secure a
+                            multi-million dollar deal with O3B Networks</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h1>Sr. Voice Engineer, <span class="job-company">tw telecom (now Lumen Technologies)</span></h1>
+                    <span class="job-date">Feb 2010 - Jul 2011</span>
+                    <ul>
+                        <li>Solely designed and managed a project to deploy a multi cluster Cisco Communications Manger
+                            to over 140 sites with about 2500 phones using the latest recommended practices including
+                            SIP gateway configuration, SRST, call globalization/localization, and unified messaging.
+                        </li>
+                        <li>Worked closely with engineering teams to internally trial a new SIP trunk product offering
+                            and providing valuable feedback to assist with the product development.</li>
+                        <li>Led the technical discussions on improving the call center to better facilitate our customer
+                            utilizing the latest technology available from our vendors.</li>
+                        <li>Collaborated with the internal networking lead architect to design and implement new Cisco
+                            Nexus equipment as new core routers for the main IT datacenter during an emergency upgrade
+                            in under a week.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h1>Solutions Engineer, <span class="job-company">Accuvant (now Optiv)</span></h1>
+                    <span class="job-date">Mar 2009 - Feb 2010</span>
+                    <ul>
+                        <li>Lead the company for both pre and post routing and switching resources often being pulled in
+                            for deals outside of primary region in the routing and switching domain.</li>
+                        <li>Presented in joint lunch and learns with Juniper in future directions of networking and
+                            equipment all across the country.</li>
+                        <li>Sold, designed, and implemented a flexible and multi-purpose proof-of-concept/development
+                            lab for Agilent Technologies to test real world protocol encapsulations using Juniper
+                            M-series, J-series, and EX-series products with various protocols stacks including 8+ layers
+                            of QinQ, 4+ layers of MPLS labels, L2TPv3, GRE, and IPIP</li>
+                        <li>Consulted with Agilent Technologies product development and software/hardware development
+                            teams as a subject matter expert in network protocols, design, and overall functions to help
+                            with their next-gen protocol analyzer product</li>
+                        <li>Wrote custom software in Python to convert proprietary backup data from Cisco ACS to Juniper
+                            Steel-Belted Radius</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h1>Network Architect, <span class="job-company">tw telecom (now Lumen Technologies)</span></h1>
+                    <span class="job-date">Feb 2006 - Mar 2008</span>
+                    <ul>
+                        <li>Redesigned an antiquated, data center to a highly resilient, high-speed network utilizing
+                            Catalyst 6500 VSS and including a new cabling and rack infrastructure to utilize gigabit and
+                            ten-gigabit connections. Phased move from old equipment to new equipment with full
+                            interoperability for low/no impact migration</li>
+                        <li>Planned and executed a multi-phased network merger of two overlapping networks to facilitate
+                            the merger of Xspedius Communications in late 2006 only using NAT when absolutely required
+                            and a 1+ year plan to remove any workarounds required during the merger with the goal to
+                            have one network architecture.</li>
+                        <li>Designed the network infrastructure for a new NOC from the ground up using Layer 3 access
+                            layer with OSPF and SSM. Designed everything from cabling and rack placement to the fiber
+                            uplinks and full network design and configuration templates.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h1>Network Engineer, <span class="job-company">M.D.C. Holdings</span></h1>
+                    <span class="job-date">May 2004 - Feb 2006</span>
+                    <ul>
+                        <li>Designed migrated redundant internet connection from a dual-NAT setup to a dual-homed BGP
+                            load sharing architecture with two Tier 1 OSP network providers.</li>
+                        <li>Designed migrated network from a legacy point-to-point T1 design to 30+ sites to a carrier
+                            provided MPLS L3VPN network using BGP for communication between PE and CE and EIGRP for any
+                            local routers at a site. Legacy T1 network was redesigned to be redundant backup to the MPLS
+                            provider.</li>
+                        <li>Designed and implemented a full Cisco IP Telephony system including Cisco Callmanager, Unity
+                            and IPCC Express for over 500 users in 3 months and steadily increased it to 1500 users in
+                            20 sites in less than one year.</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section id="accomplishments">
+                <h1>Accomplishments</h1>
+                <ul>
+                    <li>Presented a talk on Facebook's adaptable network provisioning system at NANOG71 and NANOG73.
+                    <li>Worked with the NANOG Program Committee to create the very first NANOG Hackathon.
+                        <ul>
+                            <li>Helped host the hackathons for NANOG 67, NANOG 70 and NANOG 71.</li>
+                            <li>Gave a beginners tutorial on the Go and GoBGP for the
+                                hackathon in NANOG 71.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Proposed and added support for test enumeration (<span class="prespan">go test list</span>) in
+                        the Go programming language<ul>
+                            <li><a
+                                    href="https://github.com/golang/go/issues/17209">https://github.com/golang/go/issues/17209</a>.
+                            </li>
+                            <li>Solved using a distributed custom test runner at Meta</li>
+                        </ul>
+                    </li>
+                    <li>Wrote the Go NETCONF library for Juniper Networks <ul>
+                            <li><a
+                                    href="https://github.com/Juniper/go-netconf">https://github.com/Juniper/go-netconf</a>.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Invited to work in a small workshop of 12 engineers in rewriting the JNCIE-ER to become the
+                        JNCIE-ENT.<ul>
+                            <li>Solely authored questions in the IGP and QOS sections.</li>
+                        </ul>
+                    </li>
+                    <li>Invited by Learning@Cisco as a panel of 12 members to help develop the new CCNP SP</li>
+                    <li>Contributor to the Cyanogenmod open source Android project. <ul>
+
+                            <li>Device maintainer for the Nook Color
+                                and Google Nexus 7 GSM</li>
+                            <li>various other OS/build system contributions.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
